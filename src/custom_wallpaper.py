@@ -6,7 +6,7 @@ class CustomWallpaper:
         self.number_of_rect = number_of_rect
 
     def save_image(self, image):
-        cv2.imwrite(self.path, image)
+        cv2.imwrite(f"{self.path}_result.png", image)
         print("image save")
 
     def blur(self, image, kernel_size):
